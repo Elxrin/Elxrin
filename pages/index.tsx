@@ -10,7 +10,6 @@ export default function Home() {
       <Head>
         <title>Portfolio</title>
         <meta name="description" content="Personal Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main>
         <Header/>

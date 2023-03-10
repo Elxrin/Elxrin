@@ -1,15 +1,15 @@
-import styled from 'styled-components';
-
-const Box = styled.div`
-    width: 100%;
-    font-size: 4.5rem;
-`;
+import { Box, Content } from './styles';
 
 const Hero = () => {
     return (
         <Box>
-            {/* <h1>Digital</h1> */}
-            {/* <h1>Designer</h1> */}
+            <Content>
+                <h3>👋🏻 and welcome!</h3>
+                <h4>
+                    I'm <span>Eliot</span>, a <span>software developer</span> who believes in the power of <span>technology</span> to
+                    make a difference. Take a look at my portfolio to see how I bring that vision to life.
+                </h4>
+            </Content>
         </Box>
     );
 }

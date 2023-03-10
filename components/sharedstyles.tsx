@@ -14,7 +14,7 @@ const Main = styled.main`
   width: 100%;
   padding: 10rem 2.2rem 0 2.3rem;
   flex: 1;
-`
+`;
 
 const Title = styled.h1`
   margin: 0;

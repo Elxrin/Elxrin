@@ -30,16 +30,9 @@ const Header = () => {
                         <Button onClick={toggleTheme}>
                             <BsFillSunFill/>
                         </Button>
-                        <Button onClick={() => setIsOpen(!isOpen)}>
-                            <RxHamburgerMenu/>
-                        </Button>
                     </Stack>
                 </Box>
-                {isOpen && (
-                    <Testing>
-                        <div>Testing</div>
-                    </Testing>
-                )}
+                {isOpen && (<div></div>)}
             </Appbar>
         </AnimatePresence>
     );
