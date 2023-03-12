@@ -14,9 +14,9 @@ const GlobalStyle = createGlobalStyle`
     color: #000;
     padding: 0;
     margin: 0;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    // font-family: 'Mona Sans', sans-serif;
+    // font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'Mona Sans', sans-serif;
   }
 
   a {
@@ -42,6 +42,6 @@ const GlobalStyle = createGlobalStyle`
     --background: black;
     --foreground: white;
   }
-`
+`;
 
 export default GlobalStyle

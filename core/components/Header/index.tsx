@@ -1,34 +1,33 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 
+import { IoIosMenu } from 'react-icons/io';
+import { FaTimes } from 'react-icons/fa';
+
 import Button from '../Button';
-import { useTheme } from 'next-themes';
-import { Appbar, Box, Stack, Testing } from './styles';
-import { BsFillSunFill } from 'react-icons/bs';
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { Appbar, Box, Stack } from './styles';
+import Theme from '../Theme';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const { theme, setTheme } = useTheme()
-
-    const toggleTheme = () => setTheme(theme === 'light' ? 'dark' : 'light');
-
+    
     return (
         <AnimatePresence mode="wait">
             <Appbar 
                 open={isOpen} 
-                height={isOpen ? '500px' : '60px' }
-                initial={{ height: '60px', }}
-                animate={{ height: isOpen ? '500px' : '60px' }}
+                height={isOpen ? '500px' : '63px' }
+                initial={{ height: '63px', }}
+                animate={{ height: isOpen ? '500px' : '63px' }}
                 transition={{ type: 'spring', stiffness: 100, damping: 20, duration: 0.5 }}
-                exit={{ height: '60px' }}
+                exit={{ height: '63px' }}
             >
                 <Box>
                     <div>Logo</div>
 
                     <Stack>
-                        <Button onClick={toggleTheme}>
-                            <BsFillSunFill/>
+                        <Theme/>
+                        <Button onClick={() => setIsOpen(!isOpen)}>
+                            {isOpen ? <FaTimes size={28} /> : <IoIosMenu size={28} />}
                         </Button>
                     </Stack>
                 </Box>
@@ -37,5 +36,8 @@ const Header = () => {
         </AnimatePresence>
     );
 }
- 
+
 export default Header;
+
+// https://codepen.io/mrozilla/pen/OJJNjRb
+

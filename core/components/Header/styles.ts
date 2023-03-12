@@ -8,7 +8,7 @@ interface AppbarProps {
 
 export const Appbar = styled(motion.div)<AppbarProps>`
     background-color: hsla(0, 0%, 100%, 0.5);
-    height: ${props => props.height ? props.height : '60px'};
+    height: ${props => props.height ? props.height : '63px'};
     max-width: 1024px;
     margin: 0 auto;
 	position: fixed;
@@ -21,18 +21,19 @@ export const Appbar = styled(motion.div)<AppbarProps>`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // align-items: center;
     border: 1px solid rgba(220, 235, 255, 0.5);
     padding: 5px 40px;
 
-    div {
-        font-size: 1.5rem;
-        font-weight: 600;
+    @media (max-width: 768px) {
+        left: 10px;
+        right: 10px;
+        padding: 5px 20px;
     }
+
 `;
 
 export const Box = styled.div`
-    height: 47px;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: space-between;

@@ -1,10 +1,10 @@
-import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const StyledButton = styled.button`
+export const StyledButton = styled(motion.button)`
     background-color: rgb(244, 245, 246);
     color: rgb(89, 96, 115);
-    padding: 10px 11px;
+    padding: 10px 11px 10px 11px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -15,7 +15,6 @@ const StyledButton = styled.button`
     align-items: center;
     justify-content: center;
     border: 2px solid transparent;
-
     
     &:hover {
         color: rgb(32, 92, 232);
@@ -35,18 +34,3 @@ const StyledButton = styled.button`
         box-shadow: 0 0 10px 3px rgb(227, 234, 249);
     }
 `;
-
-interface Props {
-    children: React.ReactNode;
-    onClick?: () => void;
-};
-
-const Button: React.FC<Props> = ({children, onClick}) => {
-    return (
-        <StyledButton onClick={onClick}>
-            {children}
-        </StyledButton>
-    );
-}
- 
-export default Button;
