@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <Main>
         <Header/>
-        {/* <Hero/> */}
+        <Hero/>
       </Main>
     </Container>
   )

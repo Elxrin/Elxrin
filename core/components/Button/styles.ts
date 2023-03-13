@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 export const StyledButton = styled(motion.button)`
     background-color: rgb(244, 245, 246);
     color: rgb(89, 96, 115);
+    width: 52px;
+    height: 52px;
     padding: 10px 11px 10px 11px;
     border: none;
     border-radius: 6px;

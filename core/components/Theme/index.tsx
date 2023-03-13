@@ -31,7 +31,7 @@ const Theme = () => {
                     exit="exit"
                     whileTap="tap"
                     variants={buttonVariants}
-                    style={{ paddingBottom: '5px', }}
+                    style={{ paddingBottom: '8px', }}
                 >
                     {theme === 'dark' && (
                         <motion.div
@@ -50,6 +50,7 @@ const Theme = () => {
                     {theme === 'light' && (
                         <motion.div
                             variants={iconVariants}
+                            style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}
                             transition={{
                                 type: 'spring',
                                 stiffness: 150,

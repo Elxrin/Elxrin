@@ -26,9 +26,9 @@ const Header = () => {
 
                     <Stack>
                         <Theme/>
-                        <Button onClick={() => setIsOpen(!isOpen)}>
+                        {/* <Button onClick={() => setIsOpen(!isOpen)}>
                             {isOpen ? <FaTimes size={28} /> : <IoIosMenu size={28} />}
-                        </Button>
+                        </Button> */}
                     </Stack>
                 </Box>
                 {isOpen && (<div></div>)}
