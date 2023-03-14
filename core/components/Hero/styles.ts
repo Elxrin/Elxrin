@@ -8,8 +8,12 @@ export const Container = styled.div`
 export const Box = styled.div`
     width: 100%;
     height: 100%;
-    padding: 4.5rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+    padding: 4.5rem 2.5rem;
+`;
+
+export const Content = styled.h3`
+    width: 90%;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
 `;
