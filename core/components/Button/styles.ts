@@ -1,22 +1,29 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-export const StyledButton = styled(motion.button)`
+interface ButtonProps {
+    width?: string;
+    fontSize?: string;
+    marginTop?: string;
+}
+
+export const StyledButton = styled(motion.button)<ButtonProps>`
     background-color: rgb(244, 245, 246);
     color: rgb(89, 96, 115);
-    width: 52px;
+    width: ${props => props.width || '52px'};
     height: 52px;
     padding: 10px 11px 10px 11px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 19px;
+    font-size: ${props => props.fontSize || '19px'};
     font-weight: 600;
     transition: all 0.3s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid transparent;
+    margin-top: ${props => props.marginTop || '0px'};
     
     &:hover {
         color: rgb(32, 92, 232);

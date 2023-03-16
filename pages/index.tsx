@@ -3,6 +3,7 @@ import { Container, Main } from '../styles/sharedstyles';
 
 import Header from '../core/components/Header';
 import Hero from '../core/components/Hero';
+import Projects from '../core/components/Projects';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Main>
         <Header/>
         <Hero/>
+        <Projects/>
       </Main>
     </Container>
   )

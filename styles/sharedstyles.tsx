@@ -6,14 +6,16 @@ const Container = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  min-height: 100vh;
-`
+`;
+
 const Main = styled.main`
   max-width: 1024px;
   width: 100%;
-  padding: 10rem 0 0 0;
+  padding: 3.5rem 2.5rem 4.5rem 2.5rem;
   flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
 `;
 
 export { Container, Main }

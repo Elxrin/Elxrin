@@ -8,7 +8,8 @@ export const Container = styled.div`
 export const Box = styled.div`
     width: 100%;
     height: 100%;
-    padding: 4.5rem 2.5rem;
+    // padding: 10rem 2.5rem 4.5rem 2.5rem;
+    padding-top: 10rem;
 `;
 
 export const Content = styled.h3`
