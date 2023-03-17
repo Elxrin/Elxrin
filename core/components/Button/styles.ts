@@ -42,4 +42,11 @@ export const StyledButton = styled(motion.button)<ButtonProps>`
         border: 2px solid rgb(32, 92, 232);
         box-shadow: 0 0 10px 3px rgb(227, 234, 249);
     }
+
+    @media (max-width: 768px) {
+        width: ${props => props.width || '40px'};
+        height: 44px;
+        padding: 8px 9px 8px 9px;
+        font-size: 16px;
+    }
 `;

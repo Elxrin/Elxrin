@@ -16,6 +16,18 @@ const Main = styled.main`
   display: flex;
   flex-flow: column nowrap;
   gap: 2rem;
+
+  @media (max-width: 768px) {
+    padding: 2rem 1rem 3rem 1rem;
+  }
+
+  @media (max-width: 480px) {
+      padding: 1rem 0.5rem 2rem 0.5rem;
+  }
+
+  @media (max-width: 320px) {
+      padding: 0.5rem 0.25rem 1rem 0.25rem;
+  }
 `;
 
 export { Container, Main }
