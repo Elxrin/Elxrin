@@ -13,6 +13,14 @@ const Heading = styled.h2`
     @media (max-width: 768px) {
         font-size: 2rem;
     }
+
+    @media (max-width: 576px) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.2rem;
+    }
 `;
 
 const List = styled.ul`

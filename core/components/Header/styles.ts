@@ -24,10 +24,11 @@ export const Appbar = styled(motion.div)<AppbarProps>`
     border: 1px solid rgba(220, 235, 255, 0.5);
     padding: 5px 40px;
 
-    @media (max-width: 768px) {
+    @media(max-width: 768px) {
         left: 10px;
         right: 10px;
         padding: 5px 20px;
+        height: 58px !important;
     }
 
 `;

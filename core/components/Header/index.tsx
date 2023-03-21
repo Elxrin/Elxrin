@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 
-import { IoIosMenu } from 'react-icons/io';
-import { FaTimes } from 'react-icons/fa';
-
-import Button from '../Button';
 import { Appbar, Box, Stack } from './styles';
 import Theme from '../Theme';
 
@@ -22,7 +18,7 @@ const Header = () => {
                 exit={{ height: '63px' }}
             >
                 <Box>
-                    <div>Logo</div>
+                    <div></div>
 
                     <Stack>
                         <Theme/>

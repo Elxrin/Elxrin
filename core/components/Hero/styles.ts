@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
@@ -9,13 +8,8 @@ export const Container = styled.div`
     }
 
     @media (max-width: 576px) {
-        height: 80vh;
+        height: 50vh;
     }
-
-    @media (max-width: 375px) {
-        height: 70vh;
-    }
-    
 `;
 
 export const Box = styled.div`
@@ -27,7 +21,7 @@ export const Box = styled.div`
         padding-top: 8rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
     }
 
     @media (max-width: 576px) {
