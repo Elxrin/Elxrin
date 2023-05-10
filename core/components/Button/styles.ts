@@ -24,6 +24,7 @@ export const StyledButton = styled(motion.button)<ButtonProps>`
     justify-content: center;
     border: 2px solid transparent;
     margin-top: ${props => props.marginTop || '0px'};
+    padding-bottom: 8px;
     
     &:hover {
         color: rgb(32, 92, 232);

@@ -4,7 +4,7 @@ import { useTheme } from 'next-themes';
 
 import Button from '../Button';
 import { MoonIcon, SunIcon } from '../../../shared/icons/index';
-import { iconVariants, buttonVariants } from '../../../shared/motion/variants';
+import { iconVariants } from '../../../shared/motion/variants';
 
 
 const Theme = () => {
@@ -26,12 +26,6 @@ const Theme = () => {
             <AnimatePresence>
                 <Button
                     onClick={toggleTheme}
-                    initial="initial"
-                    animate="animate"
-                    exit="exit"
-                    whileTap="tap"
-                    variants={buttonVariants}
-                    style={{ paddingBottom: '8px', }}
                 >
                     {theme === 'dark' && (
                         <motion.div
@@ -68,6 +62,3 @@ const Theme = () => {
 }
 
 export default Theme;
-
-
-// https://codepen.io/mrozilla/pen/OJJNjRb?editors=0110
