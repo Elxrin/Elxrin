@@ -7,11 +7,12 @@ interface Props {
     width: string;
 };
 
-const Button: React.FC<Props> = ({children, onClick, width}) => {
+const Button: React.FC<Props> = ({children, onClick, width, ...rest}) => {
     return (
         <StyledButton 
             onClick={onClick}
             width={width}
+            {...rest}
         >
             {children}
         </StyledButton>
