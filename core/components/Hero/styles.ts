@@ -34,6 +34,8 @@ export const Content = styled.h3`
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.5;
+    color: var(--foreground);
+    margin-bottom: 2rem;
 
     @media (max-width: 768px) {
         font-size: 2rem;

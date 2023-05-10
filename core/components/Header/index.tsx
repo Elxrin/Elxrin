@@ -35,5 +35,3 @@ const Header = () => {
 
 export default Header;
 
-// https://codepen.io/mrozilla/pen/OJJNjRb
-

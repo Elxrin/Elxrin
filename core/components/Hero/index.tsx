@@ -11,10 +11,8 @@ const Hero = () => {
 
 
                 <Button 
-                    onClick={() => location.href = 'aboutme'}
+                    onClick={() => location.href = 'https://github.com/Elxrin'}
                     width="auto"
-                    fontSize="15px"
-                    marginTop="30px"
                 >
                     About Me
                 </Button>

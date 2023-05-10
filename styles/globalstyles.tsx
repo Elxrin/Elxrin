@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     // font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-family: 'Mona Sans', sans-serif;
+    overflow: hidden;
   }
 
   a {

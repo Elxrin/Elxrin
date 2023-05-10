@@ -4,13 +4,14 @@ import { StyledButton } from './styles';
 interface Props {
     children: React.ReactNode;
     onClick?: () => void;
+    width: string;
 };
 
-const Button: React.FC<Props> = ({children, onClick, ...rest}) => {
+const Button: React.FC<Props> = ({children, onClick, width}) => {
     return (
         <StyledButton 
             onClick={onClick}
-            {...rest}
+            width={width}
         >
             {children}
         </StyledButton>
