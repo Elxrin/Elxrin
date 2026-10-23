@@ -1,13 +1,10 @@
-<h1 align="left">Hello, World! 👋</h1>
+<h1 align="left"></h1>
 
 <p align="left">
   <img src="https://user-images.githubusercontent.com/1234567/123456789-abc1d000-d5a4-11eb-9e8d-8e72dcb5eb69.gif" width="60" height="60" alt="waving hand gif" />
 </p>
 
 <p align="left">
-  I'm a software developer from the UK with a passion for building efficient, impactful software. My journey began with curiosity about what code can create, and I’m constantly inspired by the ways technology can solve real-world problems.<br><br>
-  Currently, I’m focused on developing web applications using JavaScript, TypeScript, React, and Next.js. I love exploring new tools, building projects, and keeping up with the latest in tech.<br><br>
-  Outside of coding, I enjoy digital art, gaming, and good books. I'm always ready to learn and grow!
 </p>
 
 <h2 align="left">🛠 Tech Toolbox</h2>
